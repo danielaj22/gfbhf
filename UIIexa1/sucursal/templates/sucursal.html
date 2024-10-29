@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block titulo %}sucursales{% endblock %}
+
+{% block cuerpo %}
+<h1>sucursales uziel perez</h1>
+{% for m in lassucursales %}
+<li>{{m.id_sucursal}}.-.-.-.-{{m.ciudad}}.-.-.-.-{{m.telefono}}.-.-.-.-{{m.direccion}}.-.-.-.-{{m.horario}}.-.-.-.-.{{m.nombre}}.-.-.--.{{m.email}}.-.-.-.-.{{m.id_venta}}</li>
+{% endfor %}
+{% endblock %}
